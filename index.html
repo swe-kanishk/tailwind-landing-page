@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- Navbar  -->
-    <nav class="p-3 flex bg-white justify-between items-center">
+    <nav class="p-3 flex bg-white justify-between shadow-lg fixed top-0 w-full z-10 items-center">
         <a href="#" id="brand" class="flex gap-2 items-center flex-1">
             <img class="object-cover max-w-12 max-h-12" src="./assets/asset 0.png" alt="logo">
             <span class="text-lg font-medium font-display">ToDesktop</span>
@@ -58,9 +58,9 @@
         </div>
     </nav>
     <!--main-section -->
-    <main>
+    <main class="mt-16 sm:mt-12">
         <!-- hero-section  --> 
-        <div id="hero" class="min-h-screen sm:pt-12  bg-gradient-to-b from-purple-50 via-orange-50 to-transparent">
+        <div id="hero" class="min-h-screen sm:pt-20  bg-gradient-to-b from-purple-50 via-orange-50 to-transparent">
             <div id="hero-container" class="max-w-4xl mx-auto p-6 pb-32 flex flex-col sm:items-center sm:text-center">
                 <div id="version-text" class="flex my-6 gap-2 items-center border border-yellow-400 bg-yellow-50 px-3 py-1 rounded-lg w-fit shadow-md hover:shadow-lg hover:-translate-y-2 transition group">
                     <div class="w-2 h-2 bg-yellow-400 border border-yellow-600 rounded-full"></div>
@@ -338,7 +338,7 @@
         </div>
         <!-- bento-grid  -->
         <div id="bento-grid" class="max-w-[85vw] px-6 py-12 mx-auto">
-            <h2 class="text-5xl sm:font-semibold mb-14">toDesktop handles the details</h2>
+            <h2 class="text-5xl sm:font-semibold mb-14 leading-normal max-w-2xl">toDesktop handles the details</h2>
             <div id="grid-container" class="flex gap-6 flex-col big:grid big:grid-cols-3" style="grid-auto-rows: 96px;">
                 <div class="rounded-2xl p-[1px] row-start-1 row-end-3 group gradient-hover-outer">
                     <div class="rounded-2xl w-full h-full p-6 flex flex-col items-center gap-6 gradient-hover-inner">
@@ -544,6 +544,87 @@
                 </div>
                 <div id="right" class="flex items-end mt-4 lg:w-1/2">
                     <img src="./assets/asset 34.png" class="pl-16" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- pricing  -->
+        <div class="max-w-[85vw] px-6 py-12 mx-auto">
+            <h2 class="text-5xl leading-normal sm:font-semibold max-w-2xl">Choose a plan that fits your needs</h2>
+            <div class="flex flex-col lg:flex-row mt-6 gap-6">
+                <div class="lg:border-none flex-1 lg:bg-slate-50 border rounded-xl px-8 pt-12 pb-8 flex flex-col gap-6">
+                    <h3 class="text-4xl">Free</h3>
+                    <p class="text-lg font-light">For personal use or testing your app before deploying to customers.</p>
+                    <p class="">KEY FEATURES</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center justify-start gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-700">Free for personal use</span>
+                        </li>
+                        <li class="flex items-center justify-start gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-700">Free for personal use</span>
+                        </li>
+                        <li class="flex items-center justify-start gap-4">
+                            <i class="fa-solid fa-x text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-700">Free for personal use</span>
+                        </li>
+                        <li class="flex items-center justify-start gap-4">
+                            <i class="fa-solid fa-x text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-700">Free for personal use</span>
+                        </li>
+                    </ul>
+                    <button class="border border-gray-200 rounded-lg p-3 font-medium hover:border-gray-800 text-blue-600">Read Docs</button>
+                </div>
+                <div class="lg:border-none flex-1 lg:bg-slate-50 border rounded-xl px-8 pt-12 pb-8 flex flex-col gap-6">
+                    <h3 class="text-4xl">Essential</h3>
+                    <p class="text-lg font-light">For simple desktop apps.</p>
+                    <p class="text-lg font-light"><b class="text-xl font-semibold">$99</b>/month</p>
+                    <p class="">KEY FEATURES</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center justify-start gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-700">Free for personal use</span>
+                        </li>
+                        <li class="flex items-center justify-start gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-700">Free for personal use</span>
+                        </li>
+                        <li class="flex items-center justify-start gap-4">
+                            <i class="fa-solid fa-x text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-700">Free for personal use</span>
+                        </li>
+                        <li class="flex items-center justify-start gap-4">
+                            <i class="fa-solid fa-x text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-700">Free for personal use</span>
+                        </li>
+                    </ul>
+                    <button class="border border-gray-200 rounded-lg p-3 font-medium hover:border-gray-800 text-blue-600">Read Docs</button>
+                </div>
+                <div class="lg:border-none flex-1 lg:bg-slate-50 border rounded-xl px-8 pt-12 pb-8 flex flex-col gap-6 relative">
+                    <p class="text-indigo-700 text-sm bg-indigo-100 border rounded-full w-fit px-4 py-2 font-display top-0 right-8 -translate-y-1/2 font-semibold absolute">Most Popular</p>
+                    <h3 class="text-4xl">Professional</h3>
+                    <p class="text-lg font-light">For sophisticated desktop apps.</p>
+                    <p class="text-lg font-light"><b class="text-xl font-semibold">$99</b>/month</p>
+                    <p class="">KEY FEATURES</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center justify-start gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-700">Free for personal use</span>
+                        </li>
+                        <li class="flex items-center justify-start gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-700">Free for personal use</span>
+                        </li>
+                        <li class="flex items-center justify-start gap-4">
+                            <i class="fa-solid fa-x text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-700">Free for personal use</span>
+                        </li>
+                        <li class="flex items-center justify-start gap-4">
+                            <i class="fa-solid fa-x text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-700">Free for personal use</span>
+                        </li>
+                    </ul>
+                    <button class="rounded-lg p-3 font-medium hover:bg-blue-700 text-white bg-blue-600">Read Docs</button>
                 </div>
             </div>
         </div>
