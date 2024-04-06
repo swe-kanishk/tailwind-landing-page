@@ -10,6 +10,9 @@ module.exports = {
         'display': ['Poppins', 'sans-serif'],
         'body': ['Inter', 'sans-serif'],
       },
+      screens: {
+          'big': '1150px',
+      }
     },
   },
   plugins: [],
